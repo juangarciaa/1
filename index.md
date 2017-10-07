@@ -64,10 +64,8 @@ coplot(mpg ~ disp | as.factor(cyl), data = mtcars, panel = panel.smooth, rows = 
 
 
 ```r
-ggplot(mtcars, aes(mpg, wt)) +geom_point(aes(colour=factor(cyl)))+facet_grid(.~am)```
+qplot(x=carat, binwidth=0.25, data = diamonds)
 ```
 
-```
-## Error: se intenta usar un nombre de varible de longitud cero
-```
+<img src="figure/unnamed-chunk-3-1.png" title="plot of chunk unnamed-chunk-3" alt="plot of chunk unnamed-chunk-3" style="display: block; margin: auto;" />
 

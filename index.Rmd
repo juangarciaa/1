@@ -1,7 +1,7 @@
 ---
-title       : 
+title       : Ejercicio en clase
 subtitle    : 
-author      : 
+author      : Juan Sebastian Garcia Arevalo
 job         : 
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
@@ -48,6 +48,6 @@ coplot(mpg ~ disp | as.factor(cyl), data = mtcars, panel = panel.smooth, rows = 
 ## Grafica con ggplot2
 
 ```{r,fig.height = 6, fig.align = 'center', message = F}
-ggplot(mtcars, aes(mpg, wt)) +geom_point(aes(colour=factor(cyl)))+facet_grid(.~am)```
+qplot(x=carat, binwidth=0.25, data = diamonds)
 ```
 
