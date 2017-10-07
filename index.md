@@ -1,6 +1,6 @@
 ---
-title       : Ejercicio en clase
-subtitle    : 
+title       : Ejercicio en clase 
+subtitle    : Presentacion Slidify
 author      : Juan Sebastian Garcia Arevalo
 job         : 
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
