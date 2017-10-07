@@ -1,0 +1,53 @@
+---
+title       : 
+subtitle    : 
+author      : 
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Introduccion 
+
+
+## Tabla construida con lenguaje de marcadores 
+Para la creación de este github se empleo la base de datos mtcars que esta incluida por defecto en data sets de r.
+Librerias necesarias 
+
+```{r, message=FALSE}
+library(knitr);library(kableExtra);library(ggplot2)
+```
+
+Creación de la tabla
+```{r}
+data("mtcars")
+kable(head(mtcars,5))
+```
+
+
+---
+
+## Grafica o imagen estática  
+```{r, simple-plot, fig.height = 6, fig.align = 'center', message = F}
+require(graphics)
+coplot(mpg ~ disp | as.factor(cyl), data = mtcars, panel = panel.smooth, rows = 1)
+```
+
+
+---
+
+## Imagen estatica  
+![imagen](http://www.eltiempo.com/contenido/multimedia/fotos/viajar/IMAGEN/IMAGEN-14665899-2.png)      
+
+---
+
+## Grafica con ggplot2
+
+```{r,fig.height = 6, fig.align = 'center', message = F}
+ggplot(mtcars, aes(mpg, wt)) +geom_point(aes(colour=factor(cyl)))+facet_grid(.~am)```
+```
+
